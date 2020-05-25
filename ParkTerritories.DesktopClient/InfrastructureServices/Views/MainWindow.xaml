@@ -1,0 +1,41 @@
+﻿<Window x:Class="ParkTerritories.DesktopClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ParkTerritories.DesktopClient"
+        mc:Ignorable="d"
+        Title="Парковые территории" Height="450" Width="800">
+    <Window.Resources>
+          <local:MultiLineConverter2 x:Key="MultiLineConverter2" />
+    </Window.Resources>
+
+    <Grid TextBlock.FontFamily="Century Gothic" TextBlock.FontSize="14">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <ListBox Grid.Column="0" Padding="5" Background="#4B0082" Foreground="White" ItemsSource="{Binding Parks}" SelectedItem="{Binding CurrentPark}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="5">
+
+                        <TextBlock FontSize="14" Text="{Binding Path=Name, Converter={StaticResource MultiLineConverter2}}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <StackPanel Grid.Column="1" DataContext="{Binding CurrentPark}" >
+            <TextBlock Padding="3" FontWeight="ExtraBold" Text="Подробное описание" HorizontalAlignment="Center"/>
+            <TextBlock Padding="2" TextWrapping="Wrap" Text="{Binding StringFormat=Наименование: {0}, Path=Name }"/>
+            <TextBlock Padding="2" TextWrapping="Wrap" Text="{Binding StringFormat=Местоположение: {0}, Path=Location}" />
+
+            <TextBlock Padding="2" Text="{Binding StringFormat=Наличие детской площадки: {0}, Path=PlayGround }"  />
+            <TextBlock Padding="2" Text="{Binding StringFormat=Наличие спортивной площадки: {0}, Path=SportsGround}" />
+            <TextBlock Padding="2" Text="{Binding StringFormat=Наличие водоёма: {0}, Path=Water}"/>
+
+        </StackPanel>
+    </Grid>
+</Window>

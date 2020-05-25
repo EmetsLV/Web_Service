@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParkTerritories.WebService"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParkTerritories.WebService.Tests", "ParkTerritories.WebService.Tests\ParkTerritories.WebService.Tests.csproj", "{7DBC2AC2-BAA6-4008-9EEE-0D3D24270D6F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParkTerritories.GeneralLogic", "ParkTerritories.GeneralLogic\ParkTerritories.GeneralLogic.csproj", "{1AED8B96-2E11-437A-9F3C-1FDFC4554F89}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkTerritories.GeneralLogic", "ParkTerritories.GeneralLogic\ParkTerritories.GeneralLogic.csproj", "{1AED8B96-2E11-437A-9F3C-1FDFC4554F89}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParkTerritories.DesktopClient", "ParkTerritories.DesktopClient\ParkTerritories.DesktopClient.csproj", "{3BAA4E36-DC57-4A6C-AD0C-30A4E6BC73A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkTerritories.DesktopClient", "ParkTerritories.DesktopClient\ParkTerritories.DesktopClient.csproj", "{3BAA4E36-DC57-4A6C-AD0C-30A4E6BC73A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
