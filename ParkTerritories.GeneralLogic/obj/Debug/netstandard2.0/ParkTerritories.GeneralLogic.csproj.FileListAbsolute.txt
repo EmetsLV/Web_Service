@@ -1,0 +1,9 @@
+C:\Users\ASUS\Desktop\for_Barkov\web_serv\ParkTerritories\ParkTerritories.GeneralLogic\bin\Debug\netstandard2.0\ParkTerritories.GeneralLogic.deps.json
+C:\Users\ASUS\Desktop\for_Barkov\web_serv\ParkTerritories\ParkTerritories.GeneralLogic\bin\Debug\netstandard2.0\ParkTerritories.GeneralLogic.dll
+C:\Users\ASUS\Desktop\for_Barkov\web_serv\ParkTerritories\ParkTerritories.GeneralLogic\bin\Debug\netstandard2.0\ParkTerritories.GeneralLogic.pdb
+C:\Users\ASUS\Desktop\for_Barkov\web_serv\ParkTerritories\ParkTerritories.GeneralLogic\obj\Debug\netstandard2.0\ParkTerritories.GeneralLogic.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\for_Barkov\web_serv\ParkTerritories\ParkTerritories.GeneralLogic\obj\Debug\netstandard2.0\ParkTerritories.GeneralLogic.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\for_Barkov\web_serv\ParkTerritories\ParkTerritories.GeneralLogic\obj\Debug\netstandard2.0\ParkTerritories.GeneralLogic.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\for_Barkov\web_serv\ParkTerritories\ParkTerritories.GeneralLogic\obj\Debug\netstandard2.0\ParkTerritories.GeneralLogic.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\for_Barkov\web_serv\ParkTerritories\ParkTerritories.GeneralLogic\obj\Debug\netstandard2.0\ParkTerritories.GeneralLogic.dll
+C:\Users\ASUS\Desktop\for_Barkov\web_serv\ParkTerritories\ParkTerritories.GeneralLogic\obj\Debug\netstandard2.0\ParkTerritories.GeneralLogic.pdb
