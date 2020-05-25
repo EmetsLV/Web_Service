@@ -2,6 +2,9 @@
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
 * text=auto
+**/.vs
+**/bin
+**/obj
 
 ###############################################################################
 # Set default behavior for command prompt diff.
