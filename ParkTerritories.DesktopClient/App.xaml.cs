@@ -52,7 +52,7 @@ namespace ParkTerritories.DesktopClient
         private void OnStartup(object sender, StartupEventArgs args)
         {
             var mainWindow = _serviceProvider.GetService<MainWindow>();
-            mainWindow.Show();
+            mainWindow.Show();            
         }
 
     }

@@ -11,6 +11,7 @@ using ParkTerritories.DomainObjects.Ports;
 using ParkTerritories.DomainObjects;
 using System.Collections.Generic;
 using ParkTerritories.InfrastructureServices.Gateways.Database;
+using ParkTerritories.ApplicationServices.Synchronization;
 
 namespace ParkTerritories.WebService
 {
@@ -26,6 +27,7 @@ namespace ParkTerritories.WebService
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
             services.AddDbContext<ParksContext>(opts =>
             opts.UseSqlite($"Filename={System.IO.Path.Combine(System.Environment.CurrentDirectory, "ParkTerritories.db")}")
             );

@@ -14,7 +14,7 @@ namespace ParkTerritories.InfrastructureServices.Presenters
             ContentResult = new JsonContentResult();
         }
 
-        public void Handle(GetParkListUseCaseResponse response)
+        public void Handle(GetParkListUseCaseResponse response)//записываемем json
         {
             ContentResult.StatusCode = (int)(response.Success ? HttpStatusCode.OK : HttpStatusCode.NotFound);
             ContentResult.Content = response.Success ? JsonConvert.SerializeObject(response.Parks) : JsonConvert.SerializeObject(response.Message);

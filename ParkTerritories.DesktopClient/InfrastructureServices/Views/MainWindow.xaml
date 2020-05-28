@@ -6,10 +6,7 @@
         xmlns:local="clr-namespace:ParkTerritories.DesktopClient"
         mc:Ignorable="d"
         Title="Парковые территории" Height="450" Width="800">
-    <Window.Resources>
-          <local:MultiLineConverter2 x:Key="MultiLineConverter2" />
-    </Window.Resources>
-
+  
     <Grid TextBlock.FontFamily="Century Gothic" TextBlock.FontSize="14">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.5*" />
@@ -21,7 +18,7 @@
                 <DataTemplate>
                     <StackPanel Margin="5">
 
-                        <TextBlock FontSize="14" Text="{Binding Path=Name, Converter={StaticResource MultiLineConverter2}}"/>
+                        <TextBlock FontSize="14" Text="{Binding Path=Name}"/>
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>

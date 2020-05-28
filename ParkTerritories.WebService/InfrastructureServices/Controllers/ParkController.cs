@@ -39,6 +39,5 @@ namespace ParkTerritories.InfrastructureServices.Controllers
             await _getParkListUseCase.Handle(GetParkListUseCaseRequest.CreateParkRequest(parkId), presenter);
             return presenter.ContentResult;
         }
-
     }
 }

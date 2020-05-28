@@ -4,55 +4,28 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ParkTerritories.ApplicationServices.Synchronization;
 
 namespace ParkTerritories.InfrastructureServices.Gateways.Database
 {
     public class ParksContext : DbContext
     {
-        public DbSet<Park> Parks { get; set; }
+        public DbSet<Park> Parks { get; set; } //набор сущностей, хранящихся в базе данных
 
         public ParksContext(DbContextOptions options)
             : base(options)
         { }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)  //DbModelBuilder: сопоставляет классы на языке C# с сущностями в базе данных
         {
             FillTestData(modelBuilder);
         }
 
         private void FillTestData(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Park>().HasData(
-                new
-                {
-                    Id = 1L,
-                    Name = "Памятник садово-паркового искусства – «Парк Дворца творчества детей и юношества» по адресу ул.Косыгина д.17",
-                    Location = "Главный вход в парк расположен со стороны улицы Косыгина, рельеф местности " +
-                        "спокойный, резкопересечённый, с перепадом высот до 30 м, " +
-                        "площадки и дорожки выложены плиткой и асфальтом, за корпусами расположен парк с многолетними деревьями",
-                    PlayGround = "нет",
-                    SportsGround = "нет",
-                    Water = "нет"
-                },
-                new
-                {
-                    Id = 2L, 
-                    Name = "Детский парк «Фили»", 
-                    Location = "улица Большая Филёвская, дом 9",
-                    PlayGround = "да", 
-                    SportsGround = "нет", 
-                    Water = "нет"
-                },
-                new
-                {
-                    Id = 3L,
-                    Name = "Природно-исторический парк «Битцевский лес»",
-                    Location = "Восточная часть района Ясенево",
-                    PlayGround = "нет",
-                    SportsGround = "да",
-                    Water = "нет"
-                }
-            );
+            var v = new UseCaseParks();
+
+            modelBuilder.Entity<Park>().HasData( v.parks );
         }
     }
 }
