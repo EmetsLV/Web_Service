@@ -48,7 +48,7 @@ namespace ParkTerritories.WebService
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                app.UseDeveloperExceptionPage(); 
             }
 
             app.UseRouting();
